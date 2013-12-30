@@ -8,10 +8,12 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # programs
+alias st='open -a "Sublime Text"'
 alias st2='open -a "Sublime Text"'
 # also/or do this:
 # ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" ~/bin/subl
 alias ia='open -a iA\ Writer'
+alias haroo='open -a Haroopad'
 
 
 # be nice
@@ -28,6 +30,9 @@ alias vlc="osascript ~/code/VLCControl/VLCControl.scpt"
 if ls --color > /dev/null 2>&1; then # GNU `ls`
 	colorflag="--color"
 else # OS X `ls`
+	# for mac, change up colours so that you don't get unreadable dark blue on black for dir names
+	# from: http://apple.stackexchange.com/questions/33677/how-can-i-configure-mac-terminal-to-have-color-ls-output
+	export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 	colorflag="-G"
 fi
 
