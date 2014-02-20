@@ -52,8 +52,9 @@ function git_info() {
 
 # Only show username/host if not default
 function usernamehost() {
-	#if [ $USER != $default_username ]; then echo "${MAGENTA}$USER ${WHITE}at ${ORANGE}$HOSTNAME ${WHITE}in "; fi
-	echo "${MAGENTA}$USER ${WHITE}at ${ORANGE}$HOSTNAME ${WHITE}in "
+	if [ $USER != $default_username ]; then echo "${MAGENTA}$USER ${WHITE}at ${ORANGE}$HOSTNAME ${WHITE}in "; fi
+	if [ $USER == $default_username ]; then echo "${MAGENTA}$USER ${WHITE}=> "; fi
+	#echo "${MAGENTA}$USER ${WHITE}at ${ORANGE}$HOSTNAME ${WHITE}in "
 }
 
 # iTerm Tab and Title Customization and prompt customization
