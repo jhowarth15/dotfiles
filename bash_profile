@@ -32,3 +32,11 @@ complete -W "NSGlobalDomain" defaults
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
 
+
+export NVM_DIR="/Users/jeshuamaxey/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+# The next line updates PATH for the Google Cloud SDK.
+source '/Users/jeshuamaxey/code/y/google-cloud-sdk/path.bash.inc'
+
+# The next line enables bash completion for gcloud.
+source '/Users/jeshuamaxey/code/y/google-cloud-sdk/completion.bash.inc'
