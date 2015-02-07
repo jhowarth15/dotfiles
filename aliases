@@ -21,6 +21,7 @@ alias stop_mysql='sudo $MYSQL_HOME/bin/mysqladmin shutdown'
 
 # be nice
 alias please=sudo
+alias plz=sudo
 alias hosts='sudo $EDITOR /etc/hosts'   # yes I occasionally 127.0.0.1 twitter.com ;)
 
 # handy things
@@ -71,6 +72,9 @@ alias gs="git status"
 # git commit
 alias gc="git commit"
 
+# git branch
+alias gb="git branch"
+
 # git root
 alias gr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup || pwd`'
 
@@ -117,6 +121,9 @@ alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; rm -rfv ~/.Trash"
 # Hide/show all desktop icons (useful when presenting)
 alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
+
+alias hidehidden="defaults write com.apple.finder AppleShowAllFiles -bool false"
+alias showhidden="defaults write com.apple.finder AppleShowAllFiles -bool true"
 
 # PlistBuddy alias, because sometimes `defaults` just doesn’t cut it
 alias plistbuddy="/usr/libexec/PlistBuddy"
