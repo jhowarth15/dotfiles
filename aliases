@@ -81,6 +81,23 @@ alias gr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup 
 # git merge - default behaviour is to create empty commit object to preserve history
 alias gm='git merge --no-ff'
 
+# git log
+alias gl='git log --graph --all'
+
+# Angular Fullstack Stuff
+alias yaf:s="yo angular-fullstack:factory"
+alias yaf:r="yo angular-fullstack:route"
+alias yaf:f="yo angular-fullstack:filter"
+alias yaf:d="yo angular-fullstack:directive"
+alias yaf:e="yo angular-fullstack:endpoint"
+#help
+alias yaf:h='echo Angular Fullstack Shortcuts:
+echo yaf:s "yo angular-fullstack:factory"
+echo yaf:r "yo angular-fullstack:route"
+echo yaf:f "yo angular-fullstack:filter"
+echo yaf:d "yo angular-fullstack:directive"
+echo yaf:e "yo angular-fullstack:endpoint"'
+
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en1"
