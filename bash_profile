@@ -1,6 +1,6 @@
 # Load ~/.aliases, ~/.bash_prompt, ~/.bashrc, ~/.exports, ~/.extra, ~/.functions, ~/.osx NOT ~/.inputrc
 # ~/.extra can be used for settings you don’t want to commit
-for file in ~/.{aliases,bash_prompt,bashrc,exports,extra,functions,git-completion,osx}; do
+for file in ~/.{aliases,bash_prompt,bashrc,exports,extra,functions,git-completion,osx,cytora}; do
 	[ -r "$file" ] && source "$file"
 done
 unset file
