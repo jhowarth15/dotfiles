@@ -61,7 +61,8 @@ fi
 # 							   sudo easy_install Pygments
 alias c='pygmentize -O style=monokai -f console256 -g'
 
-# GIT STUFF
+# git
+alias g="git"
 
 # Undo a `git push`
 alias undopush="git push -f origin HEAD^:master"
@@ -82,7 +83,7 @@ alias gr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup 
 alias gm='git merge --no-ff'
 
 # git log
-alias gl='git log --graph --all'
+alias gl='git log --graph'
 
 # Angular Fullstack Stuff
 alias yaf:s="yo angular-fullstack:factory"
@@ -125,8 +126,7 @@ alias trimcopy="tr -d '\n' | pbcopy"
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
 
-# Shortcuts
-alias g="git"
+# Vim
 alias v="vim"
 
 # File size
@@ -156,4 +156,3 @@ done
 # Stuff I never really use but cannot delete either because of http://xkcd.com/530/
 alias stfu="osascript -e 'set volume output muted true'"
 alias pumpitup="osascript -e 'set volume 10'"
-alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"

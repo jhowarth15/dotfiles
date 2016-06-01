@@ -28,3 +28,6 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 # symlink to get neo4j to use the right version of java
 export JAVA_HOME=/Library/Internet-Plug-Ins/JavaAppletPlugin.plugin/Contents/Home
+
+export NVM_DIR="/Users/jeshuamaxey/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
