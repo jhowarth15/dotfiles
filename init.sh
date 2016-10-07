@@ -3,7 +3,7 @@
 # in ~/dotfiles
 
 # dotfiles directory
-dir=~/dotfiles/jeshuamaxey/dotfiles
+dir=~/dotfiles
 # old dotfiles backup directory
 olddir=~/dotfiles_old
 # list of files/folders to symlink in homedir

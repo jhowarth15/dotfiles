@@ -25,14 +25,6 @@ export LANG="en_US"
 # You could just use `-g` instead, but I like being explicit
 complete -W "NSGlobalDomain" defaults
 
-export NVM_DIR="/Users/jeshuamaxey/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-# The next line updates PATH for the Google Cloud SDK.
-source '/Users/jeshuamaxey/code/y/google-cloud-sdk/path.bash.inc'
-
-# The next line enables bash completion for gcloud.
-source '/Users/jeshuamaxey/code/y/google-cloud-sdk/completion.bash.inc'
-
 # Bash completion plugin
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
 . $(brew --prefix)/etc/bash_completion
